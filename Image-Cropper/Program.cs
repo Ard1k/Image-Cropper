@@ -34,6 +34,8 @@ namespace Image_Cropper
 
       foreach (string subdir in subdirectories)
       {
+        Console.Write("\n");
+        Console.Write("--------------------------");
         Console.WriteLine($"Subfolder: " + Path.GetFileName(subdir));
 
         imageFiles = Directory.GetFiles(Path.Combine(dir, subdir), "*.*", SearchOption.TopDirectoryOnly)
